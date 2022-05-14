@@ -1,6 +1,12 @@
 <p align="center"><a href="https://www.kobisi.com" target="_blank"><img src="https://wwwcdn.kobisi.com/logo-black.png" width="400"></a></p>
 
 
+## Yapılanlar Başlıklar
+```sh
+   *API
+   *CALLBACK
+   *WORKER
+```
 
 ## Kurulum
 
@@ -25,11 +31,6 @@ php artisan serve
 // Worker'ın çalışması için:
 php artisan queue:work
 
-// Paket yenileme zamanı gelenlerin yenileme işlemini elle başlatmak isterseniz:
-php artisan packages:renew
+// Lisans süresi bitmiş firmaların ödemelerini çekme işlemini el ile başlatmak için
+php artisan packages:payment
 ```
-
-## Diğer
-Postman Collection'ı görüntülemek için <a href="https://github.com/mindwars/kobisi-challange/blob/master/Kobisi-Challange.postman_collection.json" target="_blank">tıklayınız</a>.
-
-Veritabanı şeması için <a href="https://github.com/mindwars/kobisi-challange/blob/master/database-schema.sql" target="_blank">tıklayınız</a>.
