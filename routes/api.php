@@ -22,6 +22,6 @@ Route::post('log', [\App\Http\Controllers\CallBackController::class, 'index']);
 
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::get('/company-package', [CompanyController::class, 'setPackage']);
+    Route::post('/company-package', [CompanyController::class, 'setPackage']);
     Route::get('/check-company-package', [CompanyController::class, 'checkCompanyPackage']);
 });
